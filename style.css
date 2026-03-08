@@ -119,13 +119,13 @@ h6 {
     /* Small black dot */
     border: 2px solid var(--accent-gold);
     /* Yellow/Gold border */
-    box-shadow: 0 0 10px var(--accent-gold-glow);
-    /* Glowing effect */
+    box-shadow: 0 0 15px var(--accent-gold), 0 0 30px var(--accent-gold-glow);
+    /* Intense Glowing effect */
     border-radius: 50%;
     z-index: 9999;
     pointer-events: none;
     will-change: transform;
-    transition: width 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), height 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), border-color 0.2s;
+    transition: width 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), height 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), border-color 0.2s, box-shadow 0.2s;
 }
 
 /* Cursor Hover States */
@@ -133,7 +133,7 @@ body.hovering .cursor-dot {
     width: 30px;
     height: 30px;
     border-color: var(--accent-neon);
-    box-shadow: 0 0 15px var(--accent-neon-glow);
+    box-shadow: 0 0 20px var(--accent-neon), 0 0 40px var(--accent-neon-glow);
 }
 
 /* =======================================
@@ -796,25 +796,27 @@ body.hovering .cursor-dot {
 
 .form-input {
     width: 100%;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 15px 0;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px 20px;
     color: var(--text-primary);
     font-size: 1rem;
     font-family: var(--font-body);
-    transition: border-color var(--transition-fast);
+    transition: all var(--transition-fast);
 }
 
 .form-input:focus {
     outline: none;
     border-color: var(--accent-gold);
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 0 15px var(--accent-gold-glow);
 }
 
 .form-label {
     position: absolute;
-    top: 15px;
-    left: 0;
+    top: 20px;
+    left: 20px;
     color: var(--text-muted);
     font-size: 1rem;
     pointer-events: none;
@@ -825,6 +827,10 @@ body.hovering .cursor-dot {
 .form-input:focus~.form-label,
 .form-input:not(:placeholder-shown)~.form-label {
     top: -10px;
+    left: 10px;
+    background: var(--bg-surface);
+    padding: 0 8px;
+    border-radius: 4px;
     font-size: 0.8rem;
     color: var(--accent-gold);
 }
