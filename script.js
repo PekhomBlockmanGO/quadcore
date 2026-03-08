@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Send via EmailJS (requires configuration)
             // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with actual values from EmailJS dashboard
-            emailjs.send('service_9abafv8', '__ejs-test-mail-service__', templateParams)
+            emailjs.send('service_9abafv8', 'template_79a0wlh', templateParams)
                 .then(function () {
                     submitBtn.innerHTML = '<span>Message Sent!</span><i class="fas fa-check"></i>';
                     submitBtn.style.background = 'var(--accent-gold)';
