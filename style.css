@@ -1085,6 +1085,10 @@ textarea.form-input {
         padding-top: var(--section-padding);
     }
 
+    .team-img {
+        filter: grayscale(0%) contrast(1);
+    }
+
     .glass-panel {
         grid-template-columns: 1fr;
         padding: 40px 20px;
