@@ -77,6 +77,11 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+    cursor: none;
+}
+
+button {
+    cursor: none;
 }
 
 img {
@@ -804,6 +809,7 @@ body.hovering .cursor-dot {
     font-size: 1rem;
     font-family: var(--font-body);
     transition: all var(--transition-fast);
+    cursor: none;
 }
 
 .form-input:focus {
