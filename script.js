@@ -4,33 +4,28 @@ document.addEventListener('DOMContentLoaded', () => {
        Custom Cursor Logic
        ==================================================== */
     const cursorDot = document.querySelector('.cursor-dot');
-    const cursorOutline = document.querySelector('.cursor-outline');
 
     // Only apply custom cursor on non-touch devices
-    if (window.matchMedia("(pointer: fine)").matches) {
+    if (window.matchMedia("(pointer: fine)").matches && cursorDot) {
         let mouseX = window.innerWidth / 2;
         let mouseY = window.innerHeight / 2;
-        let outlineX = mouseX;
-        let outlineY = mouseY;
+        let dotX = mouseX;
+        let dotY = mouseY;
 
         window.addEventListener('mousemove', (e) => {
             mouseX = e.clientX;
             mouseY = e.clientY;
-
-            // Dot follows exactly immediately
-            cursorDot.style.left = `${mouseX}px`;
-            cursorDot.style.top = `${mouseY}px`;
         });
 
-        // Smooth follow loop for outline using linear interpolation (lerp)
+        // Smooth follow loop for cursor using linear interpolation (lerp)
         function animateCursor() {
             // Lerp formulation: current += (target - current) * factor
-            // A higher factor (e.g. 0.2) means it follows faster.
-            outlineX += (mouseX - outlineX) * 0.2;
-            outlineY += (mouseY - outlineY) * 0.2;
+            // Factor 0.3 for very swift, yet buttery curve
+            dotX += (mouseX - dotX) * 0.3;
+            dotY += (mouseY - dotY) * 0.3;
 
-            cursorOutline.style.left = `${outlineX}px`;
-            cursorOutline.style.top = `${outlineY}px`;
+            // GPU accelerated translation avoiding layout thrashing
+            cursorDot.style.transform = `translate3d(${dotX}px, ${dotY}px, 0) translate(-50%, -50%)`;
 
             requestAnimationFrame(animateCursor);
         }
