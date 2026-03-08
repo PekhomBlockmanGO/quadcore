@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Get form values
             const templateParams = {
-                restaurant_name: document.getElementById('name').value,
+                organization_name: document.getElementById('name').value,
                 user_email: document.getElementById('email').value,
                 message: document.getElementById('message').value
             };
