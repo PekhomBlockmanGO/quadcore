@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuadCore Studio | Premium Web Design for Restaurants</title>
+
+    <!-- Fonts: Syne (Headings) and Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- EmailJS Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "6eu6OwzXoAKtfUg3g",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- Cinematic Background -->
+    <div class="cinematic-bg">
+        <div class="mesh-gradient"></div>
+        <div class="smoke-overlay"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">QuadCore <span>Studio</span></a>
+            <div class="nav-links">
+                <a href="#services" class="hover-link">Services</a>
+                <a href="#work" class="hover-link">Our Work</a>
+                <a href="#team" class="hover-link">Team</a>
+            </div>
+            <a href="#contact" class="btn primary-btn magnetic-btn">Book Consultation</a>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div class="badge fade-up">Digital Dining Experiences</div>
+                <h1 class="hero-title fade-up">
+                    Elevate Your Storefront.
+                    <span class="gradient-text">Online and Beyond.</span>
+                </h1>
+                <p class="hero-subtitle fade-up delay-1">
+                    We build the premium websites you need to <span class="typing-text"></span><span
+                        class="cursor-blink">|</span>
+                </p>
+                <div class="hero-cta fade-up delay-2">
+                    <a href="#contact" class="btn neon-btn magnetic-btn">
+                        <span class="btn-text">Upgrade Your Restaurant</span>
+                        <div class="btn-glow"></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator fade-in">
+                <span>Scroll to Explore</span>
+                <div class="line"></div>
+            </div>
+        </section>
+
+        <!-- Problem / Solution Section -->
+        <section class="split-section" id="about">
+            <div class="container split-grid">
+                <div class="split-card problem-card reveal-left">
+                    <div class="card-icon"><i class="fas fa-times-circle"></i></div>
+                    <h2>The Problem</h2>
+                    <ul class="feature-list problem-list">
+                        <li><i class="fas fa-times"></i> Outdated, unresponsive websites turning away potential
+                            customers.</li>
+                        <li><i class="fas fa-times"></i> Clunky, hard-to-navigate product catalogs and messy digital
+                            storefronts.</li>
+                        <li><i class="fas fa-times"></i> Poor search visibility, causing you to lose ground to your
+                            competitors.</li>
+                        <li><i class="fas fa-times"></i> High marketplace fees (from third-party platforms) eating into
+                            your profit margins.</li>
+                    </ul>
+                </div>
+
+                <div class="split-card solution-card reveal-right">
+                    <div class="card-glow"></div>
+                    <div class="card-icon"><i class="fas fa-check-circle"></i></div>
+                    <h2>Our Solution</h2>
+                    <ul class="feature-list solution-list">
+                        <li><i class="fas fa-check"></i> High-converting, mobile-optimized premium digital storefronts.
+                        </li>
+                        <li><i class="fas fa-check"></i> Interactive, beautifully styled, and seamless product
+                            showcases.</li>
+                        <li><i class="fas fa-check"></i> Dominant SEO strategies to capture ready-to-buy shoppers and
+                            drive traffic.</li>
+                        <li><i class="fas fa-check"></i> Direct e-commerce and booking integrations to maximize your
+                            revenue.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section (Menu Style) -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <span class="subtitle">The Menu</span>
+                    <h2>Our Specialities</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card tilt-card fade-up">
+                        <div class="service-content">
+                            <div class="icon-wrapper"><i class="fas fa-laptop-code"></i></div>
+                            <h3>Custom Web Design</h3>
+                            <p>Stunning, high-end websites built from scratch to reflect your restaurant's unique
+                                ambiance and culinary vision.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card tilt-card fade-up delay-1">
+                        <div class="service-content">
+                            <div class="icon-wrapper"><i class="fas fa-mobile-alt"></i></div>
+                            <h3>Mobile-First Menus</h3>
+                            <p>Ditch the PDFs. We create interactive, mouth-watering digital menus optimized for hungry
+                                customers on their phones.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card tilt-card fade-up delay-2">
+                        <div class="service-content">
+                            <div class="icon-wrapper"><i class="fas fa-search-location"></i></div>
+                            <h3>SEO & Local Search</h3>
+                            <p>Dominate local search results. When someone searches for food in your area, your
+                                restaurant appears first.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card tilt-card fade-up delay-3">
+                        <div class="service-content">
+                            <div class="icon-wrapper"><i class="fas fa-server"></i></div>
+                            <h3>Hosting & Maintenance</h3>
+                            <p>Premium, blazing-fast hosting with zero downtime. We handle the tech, you focus on the
+                                food.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team" id="team">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <span class="subtitle">The Chefs</span>
+                    <h2>Meet QuadCore Studio</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="team-grid">
+                    <div class="team-card fade-up">
+                        <div class="team-image-wrapper">
+                            <div class="team-glow"></div>
+                            <img src="Jyotirmoy.jpg" alt="Jyotirmoy Sen" class="team-img" loading="lazy">
+                        </div>
+                        <div class="team-info">
+                            <h3>Jyotirmoy Sen</h3>
+                            <p>Founder & Creative Director</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card fade-up delay-1">
+                        <div class="team-image-wrapper">
+                            <div class="team-glow"></div>
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                alt="Eshaan Roy" class="team-img" loading="lazy">
+                        </div>
+                        <div class="team-info">
+                            <h3>Eshaan Roy</h3>
+                            <p>Founder & Lead UI/UX</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card fade-up delay-2">
+                        <div class="team-image-wrapper">
+                            <div class="team-glow"></div>
+                            <img src="kaustav.jpg" alt="Kaustav Halder" class="team-img" loading="lazy">
+                        </div>
+                        <div class="team-info">
+                            <h3>Kaustav Halder</h3>
+                            <p>Founder & Frontend Lead</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card fade-up delay-3">
+                        <div class="team-image-wrapper">
+                            <div class="team-glow"></div>
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                alt="Debendra Nath Bandopadhay" class="team-img" loading="lazy">
+                        </div>
+                        <div class="team-info">
+                            <h3>Debendra Nath B.</h3>
+                            <p>Founder & Backend Architect</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-wrapper glass-panel fade-up">
+                    <div class="contact-info">
+                        <h2>Ready to upgrade?</h2>
+                        <p>Claim your free digital consultation today and let's craft a Michelin-star online experience
+                            for your restaurant.</p>
+
+                        <div class="social-links">
+                            <a href="#" class="social-btn magnetic-btn"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-btn magnetic-btn"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-btn magnetic-btn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-btn magnetic-btn"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="consultationForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder=" " class="form-input">
+                            <label for="name" class="form-label">Restaurant Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder=" " class="form-input">
+                            <label for="email" class="form-label">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" required placeholder=" " class="form-input"></textarea>
+                            <label for="message" class="form-label">How can we help?</label>
+                        </div>
+                        <button type="submit" class="btn submit-btn magnetic-btn">
+                            <span>Send Request</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">QuadCore <span>Studio</span></div>
+                <p>&copy; 2026 QuadCore Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
