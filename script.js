@@ -270,4 +270,16 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    /* ====================================================
+       Our Work Popup - Close on Overlay Click
+       ==================================================== */
+    const workPopup = document.getElementById('workPopup');
+    if (workPopup) {
+        workPopup.addEventListener('click', (e) => {
+            if (e.target === workPopup) {
+                workPopup.classList.remove('active');
+            }
+        });
+    }
 });

@@ -38,7 +38,8 @@
             <a href="#" class="logo">QuadCore <span>Studio</span></a>
             <div class="nav-links">
                 <a href="#services" class="hover-link">Services</a>
-                <a href="#work" class="hover-link">Our Work</a>
+                <a href="javascript:void(0)" class="hover-link"
+                    onclick="document.getElementById('workPopup').classList.add('active')">Our Work</a>
                 <a href="#team" class="hover-link">Team</a>
             </div>
             <a href="#contact" class="btn primary-btn magnetic-btn">Contact Us</a>
@@ -49,7 +50,8 @@
     <div class="mobile-menu">
         <div class="mobile-nav-links">
             <a href="#services" class="mobile-link">Services</a>
-            <a href="#work" class="mobile-link">Our Work</a>
+            <a href="javascript:void(0)" class="mobile-link"
+                onclick="document.getElementById('workPopup').classList.add('active')">Our Work</a>
             <a href="#team" class="mobile-link">Team</a>
             <a href="#contact" class="btn primary-btn magnetic-btn" style="margin-top: 20px;">Book Consultation</a>
         </div>
@@ -289,6 +291,22 @@
             </div>
         </div>
     </footer>
+
+    <!-- Our Work Popup -->
+    <div class="work-popup-overlay" id="workPopup">
+        <div class="work-popup">
+            <button class="work-popup-close" onclick="document.getElementById('workPopup').classList.remove('active')">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="work-popup-icon">
+                <i class="fas fa-hard-hat"></i>
+            </div>
+            <h3>Under Construction</h3>
+            <p>Our portfolio is currently being updated with exciting new projects. Check back soon!</p>
+            <button class="btn primary-btn" onclick="document.getElementById('workPopup').classList.remove('active')"
+                style="margin-top: 20px;">Got It</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
